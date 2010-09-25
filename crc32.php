@@ -1,0 +1,1 @@
+<?$x=$r=0xffffffff;foreach(str_split(WORD)as$w){$t=($r&0xff)^ord($w);for($i=8;$i>0;$i--)$t=$t&0x1?($t>>1)^0xEDB88320:$t>>1;$r=($r>>8)^$t;}echo$r^$x;
