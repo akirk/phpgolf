@@ -1,2 +1,2 @@
-<?p(str_split(WORD),$w);function p($i,$p){global$w;$i||$w[]=join($p);foreach($i as$k=>$u){$q=$p;$o=$i;$q[]=$u;unset($o[$k]);p($o,$q);}}sort($w);?><?=join("
-",$w);
+<?$w=str_split(WORD);while($c++<1e5){shuffle($w);$o[join($w)]=1;}ksort($o);?><?=join("
+",array_keys($o));
