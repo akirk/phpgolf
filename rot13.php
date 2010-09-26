@@ -1,0 +1,1 @@
+<?foreach(str_split(WORD)as$s)echo chr((ord($s)-84)%26+97);

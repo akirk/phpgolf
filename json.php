@@ -1,1 +1,2 @@
-<?while(preg_match('/"(\w+)": (\d+)/',JSON,$w,0,$i+=strlen($w[0])))$u[$w[1]]=$w[2];ksort($u);foreach($u as$k=>$v)echo"$k = $v\n";
+<?while($i=eregi('"([a-z]+)": ([0-9]+)',substr(JSON,$j+=$i),$w))$u[$w[1]]=$w[2];}ksort($u);foreach($u as$k=>$v)echo"$k = $v
+";

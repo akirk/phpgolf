@@ -1,4 +1,5 @@
-<?foreach(str_split(<<<E
+<?$a=str_repeat;foreach(str_split(<<<E
 ƒ%"„”ƒ(€\0%"%"%"'"&"( \0%"%"%"+&"( \0ƒ’ƒ\$C&"(€\0)%")'"&"( \0)%")'"&"( \0)%"*”ƒ‚ 
 E
-)as$s)echo($h=ord($s))?str_repeat("#",($h&0xf0)>>4).str_repeat(" ",$h&0xf):"\n";
+)as$s)echo($h=ord($s))?$a("#",($h&0xf0)>>4).$a(" ",$h&0xf):"
+";
